@@ -63,10 +63,10 @@ input.addEventListener("keyup", function (ev) {
       if (input.value == palabra) { // condicion si palabra ingresada es igual a aleatoria
         updateScore() //se invoca funcion para el puntaje 
         segundos += 3 // se suman tres segundo al tiempo restante 
-      } 
+      }
       input.value = '' //para limpiar el input
       addToDOM() // invocar a la funcion para que arroje otra palabra aleatoria
-    } 
+    }
   }
 })
 
@@ -82,7 +82,7 @@ const timeInterval = setInterval(function () { //funcion que sirve para contar e
 }, 1000) //corresponde a 1 segundo
 
 // funcion gameOver se termina el juego
-function gameOver() { 
+function gameOver() {
   seguir_jugando = false // para prohibir continuar jugando
   end_game_container.innerHTML = `
   <h1 class="vibrate-1">GAME OVER</h1>
